@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         
         //the colon looks for parameters so you need parameters selector is the function and name is the name of the listener
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemDroppedOnCharacter:", name:"onTargetDropped", object: nil)
+        
         do{
             //easier way to view it
             let resourcePath = NSBundle.mainBundle().pathForResource("cave-music", ofType:"mp3")!
